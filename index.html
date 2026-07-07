@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginContainer" class="container">
+    <h2>Admin Login</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p id="loginError"></p>
+
+    
+</div>
+
+<div id="appContainer" class="container hidden">
+
+<h1>Employee Management</h1>
+
+<div class="form">
+
+<input type="text" id="empName" placeholder="Employee Name">
+
+<input type="email" id="empEmail" placeholder="Employee Email">
+
+<input type="text" id="empDepartment" placeholder="Department">
+
+<input type="number" id="empSalary" placeholder="Salary">
+
+<button id="saveBtn">Add Employee</button>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Department</th>
+<th>Salary</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="employeeTable">
+
+</tbody>
+
+</table>
+
+<button class="logout" onclick="logout()">Logout</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
